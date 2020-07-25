@@ -59,8 +59,8 @@ address{
   margin-bottom: 5px;
 }
 .timeline_bg{
-  background: url('./components/b_heritage.png') no-repeat center center fixed;
-  background-size: cover;
+  /* background: url('./components/b_heritage.png') no-repeat center center fixed;
+  background-size: cover; */
   /* background: rgb(219, 77, 77);
   background: linear-gradient(135deg, rgb(216, 111, 111) 10%, rgb(138, 202, 88) 60%, rgb(197, 139, 63) 100%); */
 }

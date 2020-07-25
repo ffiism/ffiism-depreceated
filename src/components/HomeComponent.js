@@ -101,7 +101,7 @@ class Home extends Component {
             <div className="container">
                 <div className="row row-header justify-content-center">
                         <div className="col-12 col-sm-3 mt-3">
-                            <h2 style={{ marginTop:"50px", fontFamily:"Montserrat;", borderStyle: "solid", border: "1px solid black"}}>ABOUT US</h2>
+                            <h2 style={{ marginTop:"50px", fontFamily:"Montserrat;"}}>ABOUT US</h2>
                         </div>
                 </div>
                 <div className="row row-header justify-content-center">
@@ -124,7 +124,7 @@ class Home extends Component {
                 </div>
                 <div className="row row-header justify-content-center">
                         <div className="col-12 col-sm-3 mt-3">
-                            <h2 style={{ fontFamily:"Montserrat;", borderStyle: "solid", border: "1px solid black"}}>INITIATIVES</h2>
+                            <h2 style={{ fontFamily:"Montserrat;"}}>INITIATIVES</h2>
                         </div>
                 </div>
                 <div className="row row-header justify-content-center">
@@ -176,7 +176,7 @@ class Home extends Component {
                 </div>
                 <div className="row row-header justify-content-center">
                     <div className="col-12 col-sm-3 mt-5 mb-5">
-                        <h2 style={{ fontFamily:"Montserrat;", borderStyle: "solid", border: "1px solid black"}}>OUR JOURNEY</h2>
+                        <h2 style={{ fontFamily:"Montserrat;"}}>OUR JOURNEY</h2>
                     </div>
                 </div>
                 <div className="timeline_bg" >
@@ -279,7 +279,7 @@ class Home extends Component {
                                     <p>FFI launched its Annual Festival UMEED, (previously known as 'CARRUS') a Career Development Fest</p>
                                 </div>
                                 <div className="col-md-4">
-                                    <img src="assets/images/umeed.png" style={{height: "140px", width: "140px", verticalAlign: "center"}}/>
+                                    <img src="assets/images/umeed.png" style={{height: "120px", width: "120px", verticalAlign: "center"}}/>
                                 </div>
                             </div>
                         </VerticalTimelineElement>
