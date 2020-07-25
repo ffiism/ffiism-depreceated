@@ -1,0 +1,74 @@
+.row-header{
+  margin:0px auto;
+  padding:0px auto;
+}
+
+.row-content {
+  margin:0px auto;
+  padding: 50px 0px 50px 0px;
+  border-bottom: 1px ridge;
+  min-height:400px;
+}
+
+.footer{
+  margin:0px auto;
+  padding: 20px 0px 20px 0px;
+  background-image: url('./components/b_heritage.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.jumbotron {
+  background: url(./components/bgjumbo.jpg) no-repeat top center fixed;
+  padding:70px 30px 70px 30px;
+  margin:0px auto;
+  color: #ffffff;
+  background-size: cover;
+  min-height: 500px;
+  }
+
+address{
+  font-size:80%;
+  margin:0px;
+  color:#0f0f0f;
+}
+
+.navbar {
+  background-color: #343a40;   
+}
+.nav{
+  color: #ffffff;
+}
+.sub_text{
+  color: rgb(173, 84, 84);
+}
+.blood_font{
+  font-size: 200%;
+  font-family: "Lucida Console", Courier, monospace;
+  color:  "#eda20c";
+}
+.main_bg{
+  background: rgb(204, 192, 127);
+  /* background: linear-gradient(90deg, rgb(115, 185, 218) 10%, rgb(53, 129, 228) 35%, rgb(35, 64, 228) 100%); */
+  
+}
+.pill_donate{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  margin-bottom: 5px;
+}
+.timeline_bg{
+  background: url('./components/b_heritage.png') no-repeat center center fixed;
+  background-size: cover;
+  /* background: rgb(219, 77, 77);
+  background: linear-gradient(135deg, rgb(216, 111, 111) 10%, rgb(138, 202, 88) 60%, rgb(197, 139, 63) 100%); */
+}
+
+.vertical-timeline.vertical-timeline-custom-line .vertical-timeline-element--work .vertical-timeline-element-icon {
+  box-shadow: 0 0 0 4px #1976d2, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.vertical-timeline.vertical-timeline-custom-line .vertical-timeline-element--education .vertical-timeline-element-icon {
+  box-shadow: 0 0 0 4px #c2185b, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
