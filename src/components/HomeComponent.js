@@ -10,62 +10,8 @@ class Home extends Component {
     constructor(props) {
         super(props);
           this.state = {
-            isFlipped: false,
-            // isFlipped2: false,
-            // isFlipped3: false,
-            // isFlipped4: false
         };
-        this.toggleFlip1 = this.toggleFlip1.bind(this);
-        // this.toggleFlip2 = this.toggleFlip2.bind(this);
-        // this.toggleFlip3 = this.toggleFlip3.bind(this);
-        // this.toggleFlip4 = this.toggleFlip4.bind(this);
       }
-
-      showBack() {
-        this.setState({
-          isFlipped: true
-        });
-      }
-    
-      showFront() {
-        this.setState({
-          isFlipped: false
-        });
-      }
-    
-      handleOnFlip(flipped) {
-        if (flipped) {
-          this.refs.backButton.getDOMNode().focus();
-        }
-      }
-    
-      handleKeyDown(e) {
-        if (this.state.isFlipped && e.keyCode === 27) {
-          this.showFront();
-        }
-      }
-     
-    toggleFlip1(e) {
-        this.setState({
-            isFlipped1: !this.state.isFlipped1
-        });
-        e.preventDefault()
-    }
-    // toggleFlip2() {
-    //     this.setState({
-    //         isFlipped2: !this.state.isFlipped2
-    //     });
-    // }
-    // toggleFlip3() {
-    //     this.setState({
-    //         isFlipped3: !this.state.isFlipped3
-    //     });
-    // }
-    // toggleFlip4() {
-    //     this.setState({
-    //         isFlipped4: !this.state.isFlipped4
-    //     });
-    // }
     render(){
         return(
             <div className="text-center">
@@ -100,7 +46,7 @@ class Home extends Component {
                 </Jumbotron>
             <div className="container">
                 <div className="row row-header justify-content-center">
-                        <div className="col-12 col-sm-3 mt-3">
+                        <div className="col-12 mt-3">
                             <h2 style={{ marginTop:"50px", fontFamily:"Montserrat;"}}>ABOUT US</h2>
                         </div>
                 </div>
@@ -110,7 +56,7 @@ class Home extends Component {
                         </div>
                 </div>
                 <div className="row row-header">
-                        <div className="col-lg-10 offset-1">
+                        <div className="col-sm-12 justify-content-center">
                             <p style={{marginBottom: "50px", fontFamily:"Montserrat"}}>Fast Forward India (FFI) is a unique effort and an initiative undertaken 
                                 by the students of IIT(ISM) Dhanbad. This is an organization completely 
                                 managed and administered by young and enthusiastic students of the 
@@ -122,13 +68,13 @@ class Home extends Component {
                             </p>
                         </div>
                 </div>
-                <div className="row row-header justify-content-center">
-                        <div className="col-12 col-sm-3 mt-3">
+                <div className="row row-header">
+                        <div className="col-12 mt-3 justify-content-center">
                             <h2 style={{ fontFamily:"Montserrat;"}}>INITIATIVES</h2>
                         </div>
                 </div>
                 <div className="row row-header justify-content-center">
-                        <div className="col-12 col-sm-6 mb-5">
+                        <div className="col-12 col-sm-10 mb-5">
                             <p className="sub_text">The sectors we have been working in ...</p>
                         </div> 
                 </div>

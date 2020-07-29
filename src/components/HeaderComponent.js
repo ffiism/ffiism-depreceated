@@ -1,28 +1,30 @@
 import React, { Component } from 'react';
-import { Navbar, NavbarBrand, Nav, NavbarToggler, NavLink, Collapse, NavItem, Jumbotron,
-    Button, Modal, ModalHeader, ModalBody,Dropdown, DropdownItem, DropdownToggle, DropdownMenu,
+import { Navbar, NavbarBrand, Nav, NavbarToggler,Collapse, NavItem, Jumbotron,
+    Button, Modal, ModalHeader, ModalBody, Dropdown, DropdownItem, DropdownToggle, DropdownMenu,
     Form, FormGroup, Input, Label, Badge } from 'reactstrap';
+import {NavLink} from 'react-router-dom'
 
 class Header extends Component {
 
   constructor(props) {
-    super(props);
-    this.state = {
-        isNavOpen: false,
-        isModalOpen: false,
-        isDropDownOpen: false
-    };
-    this.toggleNav = this.toggleNav.bind(this);
-    this.toggleModal = this.toggleModal.bind(this);
-    // this.toggleDropDown = this.toggleDropDown.bind(this);
-    this.handleGoogleLogin = this.handleGoogleLogin.bind(this);
+        super(props);
+        this.state = {
+            isNavOpen: false,
+            isModalOpen: false,
+            isDropDownOpen: false
+        };
+        this.toggleNav = this.toggleNav.bind(this);
+        this.toggleModal = this.toggleModal.bind(this);
+        this.toggleDropDown = this.toggleDropDown.bind(this);
+        this.handleGoogleLogin = this.handleGoogleLogin.bind(this);
     }
 
-    // toggleDropDown() {
-    //     this.setState({
-    //         isDropDownOpen: !this.state.isDropDownOpen
-    //     });
-    // }
+    toggleDropDown() {
+        this.setState({
+            isDropDownOpen: !this.state.isDropDownOpen
+        });
+    }
+    
 
     toggleNav() {
         this.setState({
@@ -57,51 +59,72 @@ class Header extends Component {
             </Button>
             </NavbarToggler>
           <NavbarBrand  href="/">
-                <img src="assets/images/ismlogo.jpg" alt="ffi_logo" style={{width:"40px", height:"40px" }}/>  
-                &nbsp; <img src="assets/images/logo.png" alt="ffi_logo" style={{width:"40px", height:"40px" }}/>  
+            <img src="assets/images/logo.png" alt="ffi_logo" style={{width:"50px", height:"50px" }}/>  
           </NavbarBrand>
             <Collapse isOpen={this.state.isNavOpen} navbar>
                 <Nav>
                     <NavItem>
-                        <NavLink className="nav-link" to="/home">
-                            <span className="fa fa-home fa-lg"></span> &nbsp; Home
+                        <NavLink className="nav-link" style={{color: "#ffffff"}} to="/home">
+                            <span className="fa fa-home fa-lg" style={{color: "#ffffff"}}></span> &nbsp; Home
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className="nav-link" to="/aboutus">
-                            <span className="fa fa-info fa-lg"></span> &nbsp; About Us
-                        </NavLink>
-                    </NavItem>
-                    {/* <Dropdown>
-                        <DropdownToggle>
-                            <a onClick={this.toggleDropDown} /> <span className="fa fa-list fa-lg"></span> &nbsp; Initiatives
-                        </DropdownToggle>
-                        <DropdownMenu>
-                            <DropdownItem header>Header</DropdownItem>
-                            <DropdownItem disabled>Action</DropdownItem>
-                            <DropdownItem>Another Action</DropdownItem>
-                            <DropdownItem divider />
-                            <DropdownItem>Another Action</DropdownItem>
-                        </DropdownMenu>
-                    </Dropdown> */}
-                    <NavItem>
-                        <NavLink className="nav-link" to="/menu">
-                            <span className="fa fa-list fa-lg"></span> &nbsp; Initiatives
+                        <NavLink className="nav-link" style={{color: "#ffffff"}} to="/aboutus">
+                            <span className="fa fa-info fa-lg" style={{color: "#ffffff"}}></span> &nbsp; About Us
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className="nav-link" to="/contactus">
-                            <span className="fa fa-address-card fa-lg"></span> &nbsp; Members
+                        <NavLink className="nav-link" style={{color: "#ffffff"}} to="/menu">
+                            <Dropdown isOpen={this.state.isDropDownOpen} toggle={this.toggleDropDown} className="nav-item">
+                            <DropdownToggle tag="li" active="false">
+                                <span className="fa fa-list fa-lg" style={{color: "#ffffff"}}></span> &nbsp; Initiatives 
+                            </DropdownToggle>
+                            <DropdownMenu style={{backgroundColor:"#343a40"}}>
+                                <DropdownItem>
+                                    <NavItem>
+                                        <NavLink className="nav-link" style={{color: "#000000"}} to="/bloodline">
+                                            Bloodline
+                                        </NavLink>
+                                    </NavItem>
+                                </DropdownItem>
+                                <DropdownItem>
+                                    <NavItem>
+                                        <NavLink className="nav-link" style={{color: "#000000"}} to="/disha">
+                                            Disha
+                                        </NavLink>
+                                    </NavItem>
+                                </DropdownItem>
+                                <DropdownItem>
+                                    <NavItem>
+                                        <NavLink className="nav-link" style={{color: "#000000"}} to="/escape">
+                                            Escape
+                                        </NavLink>
+                                    </NavItem>
+                                </DropdownItem>
+                                <DropdownItem>
+                                    <NavItem>
+                                        <NavLink className="nav-link" style={{color: "#000000"}} to="/jagriti">
+                                            Jagriti
+                                        </NavLink>
+                                    </NavItem>
+                                </DropdownItem>
+                            </DropdownMenu>
+                            </Dropdown>
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className="nav-link" to="/favorites">
-                            <span className="fa fa-inr fa-lg"></span> &nbsp; Donate
+                        <NavLink className="nav-link" style={{color: "#ffffff"}} to="/members">
+                            <span className="fa fa-address-card fa-lg" style={{color: "#ffffff"}}></span> &nbsp; Members
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className="nav-link" to="/contactus">
-                            <span className="fa fa-address-card fa-lg"></span> &nbsp; ContactUs
+                        <NavLink className="nav-link" style={{color: "#ffffff"}} to="/favorites">
+                            <span className="fa fa-inr fa-lg" style={{color: "#ffffff"}}></span> &nbsp; Donate
+                        </NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink className="nav-link" style={{color: "#ffffff"}} to="/contactus">
+                            <span className="fa fa-address-card fa-lg" style={{color: "#ffffff"}}></span> &nbsp; ContactUs
                         </NavLink>
                     </NavItem>
                 </Nav>

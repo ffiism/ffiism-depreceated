@@ -58,12 +58,12 @@ address{
   padding-top: 5px;
   margin-bottom: 5px;
 }
-.timeline_bg{
-  /* background: url('./components/b_heritage.png') no-repeat center center fixed;
-  background-size: cover; */
-  /* background: rgb(219, 77, 77);
-  background: linear-gradient(135deg, rgb(216, 111, 111) 10%, rgb(138, 202, 88) 60%, rgb(197, 139, 63) 100%); */
-}
+/* .timeline_bg{
+  background: url('./components/b_heritage.png') no-repeat center center fixed;
+  background-size: cover;
+  background: rgb(219, 77, 77);
+  background: linear-gradient(135deg, rgb(216, 111, 111) 10%, rgb(138, 202, 88) 60%, rgb(197, 139, 63) 100%);
+} */
 
 .vertical-timeline.vertical-timeline-custom-line .vertical-timeline-element--work .vertical-timeline-element-icon {
   box-shadow: 0 0 0 4px #1976d2, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
@@ -71,4 +71,8 @@ address{
 
 .vertical-timeline.vertical-timeline-custom-line .vertical-timeline-element--education .vertical-timeline-element-icon {
   box-shadow: 0 0 0 4px #c2185b, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+.card{
+  justify-content: center;
+  align-items: center;
 }
