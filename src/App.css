@@ -84,3 +84,7 @@ address{
   grid-gap: 1.5rem;
   align-items: center;
 }
+
+#deckBloodlineCard {
+  background-color: red;
+}

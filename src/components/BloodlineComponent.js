@@ -85,7 +85,7 @@ class Bloodline extends Component{
                     <Card style={{boxShadow:"3px 3px 10px 5px #888888"}}>
                       <CardHeader style={{background:'red', width:'100%'}} className="text-white text-center">Handling Helpline</CardHeader>
                       <CardBody>Through helpline requests, we help address immediate blood requirements by patients. Fill this form and we will find a donor.</CardBody>
-                      <Button id="deckBloodlineCard">Organize a Camp</Button>
+                      <Button id="deckBloodlineCard">Raise a Request</Button>
                     <br/>
                     </Card>
                     <Card style={{boxShadow:"3px 3px 10px 5px #888888"}}>
