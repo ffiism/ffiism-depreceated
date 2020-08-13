@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Navbar, NavbarBrand } from 'reactstrap';
+import { Navbar, NavbarBrand, Container, Row, Col } from 'reactstrap';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import Header from './HeaderComponent'
 import Footer from './FooterComponent'
@@ -21,9 +21,11 @@ class Main extends Component {
     }
 
     return (
-      <div>
-        <Header />
-        <Switch>
+      <Container>
+        <Row lg="1" xs="1">
+          <Col lg="12" xs = "12">
+            <Header />
+            <Switch>
               <Route path="/home" component={()=> <Home />} />
               <Route path="/aboutus" component={HomePage} />
               <Route path="/disha" component={HomePage} />
@@ -35,8 +37,11 @@ class Main extends Component {
               <Route path="/contactus" component={HomePage} />
               <Redirect to="/home" />
             </Switch>
-        <Footer />
-      </div>
+            <Footer />
+          </Col>
+        </Row>
+      </Container>
+      
     );
   }
 }
