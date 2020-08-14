@@ -106,32 +106,25 @@ class Home extends Component {
 
         return (
             <div className="text-center">
+                <h1>.</h1>
                 <Jumbotron fluid>
                     <div className="container text-center">
                         <div className="row row-header justify-content-center">
-                            <div className="col-12 mb-2">
-                                {/* <h1>Learn . Donate . Change life</h1>
-                                <p>Fast Forward India (FFI) is a unique effort and an initiative undertaken 
-                                    by the students of IIT(ISM) Dhanbad. This is an organization completely 
-                                    managed and administered by the young and enthusiastic students of the institution.
-                                    <br></br><br></br>
-                                </p> */}
+                            <div className="col-lg-12">
                                 <h1>{DATA.HOMEPAGE.MOTTO}</h1>
                                 <p>{DATA.HOMEPAGE.DESC}</p>
 
                             </div>
                         </div>
                         <div className="row row-header justify-content-center">
-                            <div className="col-12 col-sm-6 mb-3">
-                                <Badge className="pill_donate" href="donate" size="lg" color="danger" pill>
-                                    <h2 className="justify-text-centre">BECOME A MEMBER</h2>
-                                </Badge>
-                            </div>
+                            <Badge className="pill_donate" href="donate" color="danger" pill>
+                                <h2 className="justify-text-centre">BECOME A MEMBER</h2>
+                            </Badge>
                         </div>
                         <div className="row row-header justify-content-center">
                             <div className="col-12 col-sm-6 mb-3">
                                 <a className="fa fa-play-circle fa-4x umeed_play" style={{color: "#ffffff"}}/>
-                                </div>
+                            </div>
                         </div>
                         <div className="row row-header justify-content-center mt-1">
                             <div className="col-12 col-sm-6">
@@ -187,7 +180,7 @@ class Home extends Component {
                             </div>
                     </div>
                     <div className="row row-header justify-content-center">
-                        <img src="assets/images/ffi_wordart.png" style={{height: "500px", width: "1500px", verticalAlign: "center", background:""}}/>
+                        <img src="assets/images/ffi_wordart.png" style={{height: "auto", width: "100%", verticalAlign: "center", background:""}}/>
                     </div>
                     <div className="row row-header justify-content-center">
                         <div className="col-12 col-sm-3 mt-5 mb-5">

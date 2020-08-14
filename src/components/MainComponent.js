@@ -21,9 +21,11 @@ class Main extends Component {
     }
 
     return (
-      <Container>
-        <Row lg="1" xs="1">
-          <Col lg="12" xs = "12">
+      <div>
+
+      {/* // <Container>
+      //   <Row lg="1" xs="1">
+      //     <Col lg="12" xs = "12"> */}
             <Header />
             <Switch>
               <Route path="/home" component={()=> <Home />} />
@@ -38,9 +40,11 @@ class Main extends Component {
               <Redirect to="/home" />
             </Switch>
             <Footer />
-          </Col>
-        </Row>
-      </Container>
+      {/* //     </Col>
+      //   </Row>
+      // </Container> */}
+
+      </div>
       
     );
   }
