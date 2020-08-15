@@ -2,5 +2,10 @@
 {
     position: fixed;
     width: 100%;
-    z-index: 1;
+}
+
+#mynav
+{
+    position: relative;
+    z-index: 100;
 }

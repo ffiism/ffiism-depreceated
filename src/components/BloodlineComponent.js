@@ -1,6 +1,10 @@
 import React, {Component} from 'react'
 import {Carousel, CarouselItem, CarouselControl, CarouselIndicators, CarouselCaption, Row, Col, CardHeader, Card, CardBody, CardDeck, Button, Modal, ModalHeader, ModalBody, Label } from 'reactstrap';
 import { MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask, MDBContainer } from "mdbreact";
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+
+
+import DATA from "../orgData";
 
 const CarouselPage = () => {
     return (
@@ -10,7 +14,7 @@ const CarouselPage = () => {
         length={3}
         showControls={true}
         showIndicators={true}
-        className="z-depth-1"
+        //className="z-depth-0"
         interval={1300}
       >
         <MDBCarouselInner>
@@ -70,8 +74,50 @@ class Bloodline extends Component{
         };
     }
     render(){
+
+      const getInfoDiv = (value) =>
+            <div className="col-md-8">
+                <h3 className="vertical-timeline-element-title">{value.YEAR}</h3>
+                <p>{value.DESC}</p>
+            </div>
+        ;
+        const getImageDiv = (value) =>
+            <div className="col-md-4">
+                <img src={value.IMG_URL} style={value.IMG_STYLE} />
+            </div>
+        ;
+
+        function getDiv(value)
+        {
+            if(value.FLAG === 'LEFT') return (
+                <div className="row">
+                    {getImageDiv(value)}
+                    {getInfoDiv(value)}
+                </div>
+            );
+            else return (
+                <div className="row">
+                    {getInfoDiv(value)}
+                    {getImageDiv(value)}
+                </div>
+            );
+        }
+
+      const journey = DATA.BLOODLINE.JOURNEY.map((value) =>
+            <VerticalTimelineElement
+                className={value.CLASS_NAME}
+                contentStyle={value.CONTENT_STYLE}
+                contentArrowStyle={value.CONTENT_ARROW_STYLE}
+                iconStyle={value.ICON_STYLE}
+                // icon={<span className="fa fa-question fa-3x" style={{marginTop: "7px", marginRight: '2px'}}></span>}
+            >
+                {getDiv(value)}
+            </VerticalTimelineElement>
+        );
+
         return(
             <div className="container">
+                <h1>.</h1>
                 <br/>
                 <CarouselPage/>
                 <br/>
@@ -95,6 +141,17 @@ class Bloodline extends Component{
                     <br/>
                     </Card>
                 </CardDeck>
+                <br /><br />
+                <div className="row row-header justify-content-center">
+                    <div className="col-12 col-sm-3 mt-5 mb-5">
+                        <h2 style={{ fontFamily:"Montserrat;"}}>OUR JOURNEY</h2>
+                    </div>
+                </div>
+                <div className="timeline_bg" >
+                    <VerticalTimeline>
+                        {journey}
+                    </VerticalTimeline>
+                </div>
             </div>
         )
     }

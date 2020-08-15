@@ -6,6 +6,7 @@ import Footer from './FooterComponent'
 import Home from './HomeComponent'
 import Members from './MemberComponent'
 import Bloodline from './BloodlineComponent'
+import Escape from './EscapeComponent'
 
 class Main extends Component {
 
@@ -31,7 +32,7 @@ class Main extends Component {
               <Route path="/home" component={()=> <Home />} />
               <Route path="/aboutus" component={HomePage} />
               <Route path="/disha" component={HomePage} />
-              <Route path="/escape" component={HomePage} />
+              <Route path="/escape" component={Escape} />
               <Route path="/jagriti" component={HomePage} />
               <Route path="/bloodline" component={()=><Bloodline />} />
               <Route exact path="/members" component={() => <Members />} />

@@ -166,6 +166,98 @@ const DATA = {
         ]  // TESTIMONIALS [ ] :: ENDS here
 
     }, // HOMEPAGE { } :: ENDS here
+
+    ESCAPE: {
+        VISION: "Through ESCAPE we intend to eliminate the communication barrier amongst masses from different sects of society and to install within our students enhanced speaking skills along with a pleasing personality",
+        FULL_FORM: "English Speaking Course and Personality Enhancement",
+        ABOUT: [
+            "The importance of English in the current generation is unparalleled. While it is indispensable in the urban scenario, English seems to be steadily spreading its roots into the rural areas as well. For a leading developing nation, it is important that the generations to come are well equipped with knowledge of the language, and are capable of facing the everyday challenges of modern society.",
+            "Fast Forward India aims at strengthening the roots of our nation. ESCAPE is an extension of the same. ESCAPE (English Speaking Course And Personality Enhancement), aims at spreading not just knowledge of the language but also communication skills and overall personality enhancement to those with limited resources.",
+            "It aims at providing a platform for building confidence, encouraging creativity and developing skills which help them in various real world situations."
+        ],
+        WORKING: [
+            "There are FFI centers near IIT(ISM) campus where ESCAPE classes are conducted every week.",
+            "Everyday a batch of volunteers are appointed to the center to teach the children for 1 hour per volunteer. Monday to Friday classes are scheduled from 6:00-8:00pm, so a total of two volunteers are appointed everyday.",
+            "Every volunteer devotes his/her one hour for the noble cause.",
+            "ESCAPE conduct tests regularly to check their improvement.",
+            "On Saturdays and Sundays we conduct classes for the the Abhoya Sundari Indrdhanush Orphanage students (60 students) near Hirapur area. To enhance their personality, we show them videos, play interactive games and try to increase their communication skills."
+        ],
+        ESTABLISHMENT: [
+            "Over the years the number of students have considerably increased. The number of volunteers are also increasing steadily, along with their dedication towards the students.",
+            "ESCAPE also organized “Pratibha” and “Dream India”, the drama and dance competitions respectively.",
+            "A free library under FFI is also being setup with active volunteering from ESCAPE along with an \“ESCAPE Documentary\” to showcase the importance of English and personality enhancement, and to demonstrate the working and progress of ESCAPE.",
+            "\“Aayam\”, a first of its kind “Hinglish Magazine” which is also being worked upon, comprising of all the latest and upcoming events, weekly articles and updates."
+        ],
+        ACHIEVEMENTS: [
+            "164 students have been imparted computer education in the previous 6 batches successfully at our center.",
+            "Among 29 inmates from KARAGAR JAGRITI CHAPTER, 14 inmates have been retracted on righteous path and now they are earning honestly.",
+            "\"Dwanda\" a computer quiz, for the slum students has been organized at annual basis.",
+            "\"Tulika\" a painting competition is an annually organized event.",
+            "Our student Rajni got 1st rank in interview for Biotech. course in P.K. Roy memorial College.",
+            "A student Sachin of our batch has got the Job as computer operator in the ISM, Emrald Hostel"
+        ]
+    }, // ESCAPE { } :: ENDS here
+
+    BLOODLINE: {
+        JOURNEY: [
+            {
+                FLAG: 'LEFT',
+                CLASS_NAME: 'vertical-timeline-element--work',
+                CONTENT_STYLE: { background: "#f50525", color: '#fff' },
+                CONTENT_ARROW_STYLE: { borderRight: '7px solid  #f50525' },
+                ICON_STYLE: { background: '#f50525', color: '#fff' },
+                YEAR: '2020',
+                DESC: 'Started an Online Education System "AAGAZ"',
+                IMG_URL: 'assets/images/donate.png',
+                IMG_STYLE: {height: "100px", width: "150px", verticalAlign: "center"}
+            },
+            {
+                FLAG: 'RIGHT',
+                CLASS_NAME: 'vertical-timeline-element--education',
+                CONTENT_STYLE: { background: "#f70202", color: '#fff' },
+                CONTENT_ARROW_STYLE: { borderRight: '7px solid  #f70202' },
+                ICON_STYLE: { background: '#f70202', color: '#fff' },
+                YEAR: '2019',
+                DESC: 'Initiative started to prepare students for Navodaya Entrance Examination',
+                IMG_URL: 'assets/images/blood.png',
+                IMG_STYLE: {height: "100px", width: "90px", verticalAlign: "center"}
+            },
+            {
+                FLAG: 'LEFT',
+                CLASS_NAME: 'vertical-timeline-element--work',
+                CONTENT_STYLE: { background: "#fa3007", color: '#fff' },
+                CONTENT_ARROW_STYLE: { borderRight: '7px solid  #fa3007' },
+                ICON_STYLE: { background: '#fa3007', color: '#fff' },
+                YEAR: '2020',
+                DESC: 'Started an Online Education System "AAGAZ"',
+                IMG_URL: 'assets/images/blood.png',
+                IMG_STYLE: {height: "100px", width: "150px", verticalAlign: "center"}
+            },
+            {
+                FLAG: 'RIGHT',
+                CLASS_NAME: 'vertical-timeline-element--education',
+                CONTENT_STYLE: { background: "#ff6600", color: '#fff' },
+                CONTENT_ARROW_STYLE: { borderRight: '7px solid  #ff6600' },
+                ICON_STYLE: { background: '#ff6600', color: '#fff' },
+                YEAR: '2019',
+                DESC: 'Initiative started to prepare students for Navodaya Entrance Examination',
+                IMG_URL: 'assets/images/donate.png',
+                IMG_STYLE: {height: "100px", width: "90px", verticalAlign: "center"}
+            },
+            {
+                FLAG: 'LEFT',
+                CLASS_NAME: 'vertical-timeline-element--work',
+                CONTENT_STYLE: { background: "#f59105", color: '#fff' },
+                CONTENT_ARROW_STYLE: { borderRight: '7px solid  #f59105' },
+                ICON_STYLE: { background: '#f59105', color: '#fff' },
+                YEAR: '2020',
+                DESC: 'Started an Online Education System "AAGAZ"',
+                IMG_URL: 'assets/images/bld_donate.png',
+                IMG_STYLE: {height: "100px", width: "150px", verticalAlign: "center"}
+            },
+            
+        ]
+    }
 };
 
 export default DATA;

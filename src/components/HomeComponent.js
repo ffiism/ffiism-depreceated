@@ -107,7 +107,7 @@ class Home extends Component {
         return (
             <div className="text-center">
                 <h1>.</h1>
-                <Jumbotron fluid>
+                <Jumbotron fluid id="home-jumbotron">
                     <div className="container text-center">
                         <div className="row row-header justify-content-center">
                             <div className="col-lg-12">

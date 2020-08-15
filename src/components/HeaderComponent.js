@@ -52,7 +52,8 @@ class Header extends Component {
 
   render() {
     return(
-    <React.Fragment>
+
+    <div id="mynav"><React.Fragment>
       <Navbar id="ffi-navbar" expand="md">
         <div className="container justify-text-center">
             <NavbarToggler >
@@ -69,17 +70,17 @@ class Header extends Component {
                 <Nav>
                     
                     <NavItem>
-                        <NavLink className="nav-link" style={{color: "#ffffff"}} to="/home">
+                        <NavLink  onClick={this.toggleNav} className="nav-link" style={{color: "#ffffff"}} to="/home">
                             <span className="fa fa-home fa-lg" style={{color: "#ffffff"}}></span> &nbsp; Home
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className="nav-link" style={{color: "#ffffff"}} to="/aboutus">
+                        <NavLink onClick={this.toggleNav} className="nav-link" style={{color: "#ffffff"}} to="/aboutus">
                             <span className="fa fa-info fa-lg" style={{color: "#ffffff"}}></span> &nbsp; About Us
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className="nav-link" style={{color: "#ffffff"}} to="/menu">
+                        <NavLink  className="nav-link" style={{color: "#ffffff"}} to="/menu">
                             <Dropdown isOpen={this.state.isDropDownOpen} toggle={this.toggleDropDown} className="nav-item">
                                 <DropdownToggle tag="li" active="false">
                                     <span className="fa fa-list fa-lg" style={{color: "#ffffff"}}></span> &nbsp; Initiatives 
@@ -87,28 +88,28 @@ class Header extends Component {
                                 <DropdownMenu style={{backgroundColor:"#343a40"}}>
                                     <DropdownItem>
                                         <NavItem>
-                                            <NavLink className="nav-link" style={{color: "#000000"}} to="/bloodline">
+                                            <NavLink onClick={this.toggleNav} className="nav-link" style={{color: "#000000"}} to="/bloodline">
                                             <i style={{color: "rgb(180,200,255)"}}>Bloodline</i>
                                             </NavLink>
                                         </NavItem>
                                     </DropdownItem>
                                     <DropdownItem>
                                         <NavItem>
-                                            <NavLink className="nav-link" style={{color: "#000000"}} to="/disha">
+                                            <NavLink onClick={this.toggleNav} className="nav-link" style={{color: "#000000"}} to="/disha">
                                                 <i style={{color: "rgb(180,200,255)"}}>Disha</i>
                                             </NavLink>
                                         </NavItem>
                                     </DropdownItem>
                                     <DropdownItem>
                                         <NavItem>
-                                            <NavLink className="nav-link" style={{color: "#000000"}} to="/escape">
+                                            <NavLink onClick={this.toggleNav} className="nav-link" style={{color: "#000000"}} to="/escape">
                                                 <i style={{color: "rgb(180,200,255)"}}>Escape</i>
                                             </NavLink>
                                         </NavItem>
                                     </DropdownItem>
                                     <DropdownItem>
                                         <NavItem>
-                                            <NavLink className="nav-link" style={{color: "#000000"}} to="/jagriti">
+                                            <NavLink onClick={this.toggleNav} className="nav-link" style={{color: "#000000"}} to="/jagriti">
                                             <i style={{color: "rgb(180,200,255)"}}>Jagriti</i>
                                             </NavLink>
                                         </NavItem>
@@ -118,24 +119,24 @@ class Header extends Component {
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className="nav-link" style={{color: "#ffffff"}} to="/members">
+                        <NavLink onClick={this.toggleNav} className="nav-link" style={{color: "#ffffff"}} to="/members">
                             <span className="fa fa-address-card fa-lg" style={{color: "#ffffff"}}></span> &nbsp; Members
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className="nav-link" style={{color: "#ffffff"}} to="/favorites">
+                        <NavLink onClick={this.toggleNav} className="nav-link" style={{color: "#ffffff"}} to="/favorites">
                             <span className="fa fa-inr fa-lg" style={{color: "#ffffff"}}></span> &nbsp; Donate
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className="nav-link" style={{color: "#ffffff"}} to="/contactus">
+                        <NavLink onClick={this.toggleNav} className="nav-link" style={{color: "#ffffff"}} to="/contactus">
                             <span className="fa fa-address-card fa-lg" style={{color: "#ffffff"}}></span> &nbsp; ContactUs
                         </NavLink>
                     </NavItem>
                     
                 </Nav>
                 <Nav className="ml-auto" navbar>
-                    <NavItem>
+                    <NavItem onClick={this.toggleNav}>
                             <Button outline color="warning" onClick={this.toggleModal}>
                                 <span className="fa fa-sign-in fa-lg"></span> Login
                             </Button>
@@ -173,7 +174,7 @@ class Header extends Component {
                 <Button color="primary" onClick={this.handleGoogleLogin} block><span className="fa fa-google fa-lg"></span> Login with Google</Button>
             </ModalBody>
         </Modal>
-    </React.Fragment>
+    </React.Fragment></div>
     );
   }
 }
