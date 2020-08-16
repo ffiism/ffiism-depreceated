@@ -6,6 +6,7 @@ import Footer from './FooterComponent'
 import Home from './HomeComponent'
 import Members from './MemberComponent'
 import Bloodline from './BloodlineComponent'
+import Escape from './EscapeComponent'
 
 class Main extends Component {
 
@@ -21,15 +22,17 @@ class Main extends Component {
     }
 
     return (
-      <Container>
-        <Row lg="1" xs="1">
-          <Col lg="12" xs = "12">
+      <div>
+
+      {/* // <Container>
+      //   <Row lg="1" xs="1">
+      //     <Col lg="12" xs = "12"> */}
             <Header />
             <Switch>
               <Route path="/home" component={()=> <Home />} />
               <Route path="/aboutus" component={HomePage} />
               <Route path="/disha" component={HomePage} />
-              <Route path="/escape" component={HomePage} />
+              <Route path="/escape" component={Escape} />
               <Route path="/jagriti" component={HomePage} />
               <Route path="/bloodline" component={()=><Bloodline />} />
               <Route exact path="/members" component={() => <Members />} />
@@ -38,9 +41,11 @@ class Main extends Component {
               <Redirect to="/home" />
             </Switch>
             <Footer />
-          </Col>
-        </Row>
-      </Container>
+      {/* //     </Col>
+      //   </Row>
+      // </Container> */}
+
+      </div>
       
     );
   }
