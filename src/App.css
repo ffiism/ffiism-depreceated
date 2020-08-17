@@ -88,3 +88,41 @@ address{
 #deckBloodlineCard {
   background-color: red;
 }
+
+
+#vision{
+  background-color: #f5f6f7;
+}
+
+.page-enter{
+  opacity: 0.01;
+  transform: translateX(-100%);
+}
+.page-enter-active{
+  opacity: 1;
+  transform: translateX(0%);
+  transition: all 5000ms ease-in;
+}
+.page-exit{
+  opacity: 1;
+  transform: translateX(0%);
+}
+.page-exit-active{
+  opacity: 0.01;
+  transform: translateX(100%);
+  transition: all 5000ms ease-out;
+}
+
+#list ,#list-o{
+  border-radius:100px;
+  margin: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+#location{
+  color: red;
+}
+
+
+
