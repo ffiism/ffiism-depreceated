@@ -1,0 +1,11 @@
+#ffi-navbar
+{
+    position: fixed;
+    width: 100%;
+}
+
+#mynav
+{
+    position: relative;
+    z-index: 100;
+}
