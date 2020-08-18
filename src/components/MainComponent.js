@@ -9,7 +9,7 @@ import Bloodline from './BloodlineComponent'
 import Jagriti from './JagritiComponent';
 import Contact from './ContactComponent'
 import {TransitionGroup,CSSTransition} from 'react-transition-group';
-
+import Escape from './EscapeComponent'
 
 class Main extends Component {
 
@@ -25,9 +25,11 @@ class Main extends Component {
     }
 
     return (
-      <Container>
-        <Row lg="1" xs="1">
-          <Col lg="12" xs = "12">
+      <div>
+
+      {/* // <Container>
+      //   <Row lg="1" xs="1">
+      //     <Col lg="12" xs = "12"> */}
             <Header />
             <TransitionGroup>
          <CSSTransition classNames="page" timeout={300}>
@@ -35,8 +37,8 @@ class Main extends Component {
               <Route path="/home" component={()=> <Home />} />
               <Route path="/aboutus" component={HomePage} />
               <Route path="/disha" component={HomePage} />
-              <Route path="/escape" component={HomePage} />
               <Route path="/jagriti" component={Jagriti} />
+              <Route path="/escape" component={Escape} />
               <Route path="/bloodline" component={()=><Bloodline />} />
               <Route exact path="/members" component={() => <Members />} />
               <Route path="/donate" component={HomePage} />
@@ -46,9 +48,11 @@ class Main extends Component {
            </CSSTransition>
             </TransitionGroup>
             <Footer />
-          </Col>
-        </Row>
-      </Container>
+      {/* //     </Col>
+      //   </Row>
+      // </Container> */}
+
+      </div>
       
     );
   }

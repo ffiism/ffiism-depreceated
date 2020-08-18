@@ -1,5 +1,5 @@
 import React from 'react';
-import bgimage from '../components/b_heritage.png'
+import bgimage from '../components/b_heritage.png';
 
 
 function Footer(props) {
@@ -7,7 +7,7 @@ function Footer(props) {
     <div className="footer mt-5 fixed-bottom">
         <div className="container">
             <div className="row justify-content-center">             
-                <div className="col-4 col-sm-4">
+                <div className="col-lg-6 col-sm-12 text-center">
                     <h4 style={{ color: "#FF0" }}>Quick Links</h4>
                     <ul className="list-unstyled">
                         <li><a href="#"><span style={{color:"white"}}>Home</span></a></li>
@@ -17,8 +17,8 @@ function Footer(props) {
                         <li><a href="#"><span style={{color:"white"}}>Donate</span></a></li>
                     </ul>
                 </div>
-                <div className="col-4 col-sm-4">
-                    <h4 style={{ color: "#FF0" }}>Our Address</h4>
+                <div className="col-lg-6 col-sm-12 text-center">
+                    <h4 className="footer-head" style={{ color: "#FF0" }}>Our Address</h4>
                     <address>
                         <span style={{color:"white", fontSize: "17px"}}>
                             Indian Insitute of Technology,<br />
@@ -32,8 +32,10 @@ function Footer(props) {
                         </span>   
                     </address>
                 </div>
-                <div className="col-4 col-sm-4 align-self-center">
+        
+                <div className="col-lg-12 col-sm-12 align-self-center">
                     <div className="text-center">
+                        <br />
                         <a className="btn btn-social-icon btn-instagram mt-1" href="http://google.com/+"><i className="fa fa-instagram"></i></a>&nbsp;
                         <a className="btn btn-social-icon btn-facebook mt-1" href="http://www.facebook.com/profile.php?id="><i className="fa fa-facebook"></i></a>&nbsp;
                         <a className="btn btn-social-icon btn-linkedin mt-1" href="http://www.linkedin.com/in/"><i className="fa fa-linkedin"></i></a>&nbsp;
