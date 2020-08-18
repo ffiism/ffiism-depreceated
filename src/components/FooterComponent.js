@@ -4,7 +4,7 @@ import bgimage from '../components/b_heritage.png'
 
 function Footer(props) {
     return(
-    <div className="footer mt-5">
+    <div className="footer mt-5 fixed-bottom">
         <div className="container">
             <div className="row justify-content-center">             
                 <div className="col-4 col-sm-4">
