@@ -21,6 +21,7 @@
     "react-flippy": "^0.1.5",
     "react-font-style": "0.0.11",
     "react-fontawesome": "^1.7.1",
+    "react-google-maps": "^9.4.5",
     "react-popper": "^2.2.3",
     "react-redux": "^7.2.1",
     "react-router-dom": "^5.2.0",
