@@ -19,12 +19,12 @@ const DATA = {
             {
                 NAME: 'ESCAPE',
                 FA: 'fa fa-medkit fa-stack-1x fa-inverse',
-                HREF: 'initiatives/escape'
+                HREF: '/escape'
             },
             {
                 NAME: 'JAGRITI',
                 FA: 'fa fa-medkit fa-stack-1x fa-inverse',
-                HREF: 'initiatives/jagriti'
+                HREF: '/jagriti'
             }
         ], // SECTORS [ ] :: ENDS here
 
