@@ -7,6 +7,7 @@ import Home from './HomeComponent'
 import Members from './MemberComponent'
 import Bloodline from './BloodlineComponent'
 import Jagriti from './JagritiComponent';
+import Contact from './ContactComponent'
 import {TransitionGroup,CSSTransition} from 'react-transition-group';
 import Escape from './EscapeComponent'
 import Disha from './DishaComponent';
@@ -42,7 +43,7 @@ class Main extends Component {
               <Route path="/bloodline" component={()=><Bloodline />} />
               <Route exact path="/members" component={() => <Members />} />
               <Route path="/donate" component={HomePage} />
-              <Route path="/contactus" component={HomePage} />
+              <Route path="/contactus" component={Contact} />
               <Redirect to="/home" />
             </Switch>
            </CSSTransition>
