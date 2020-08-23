@@ -9,6 +9,7 @@ import Bloodline from './BloodlineComponent'
 import Jagriti from './JagritiComponent';
 import {TransitionGroup,CSSTransition} from 'react-transition-group';
 import Escape from './EscapeComponent'
+import Disha from './DishaComponent';
 
 class Main extends Component {
 
@@ -35,7 +36,7 @@ class Main extends Component {
             <Switch>
               <Route path="/home" component={()=> <Home />} />
               <Route path="/aboutus" component={HomePage} />
-              <Route path="/disha" component={HomePage} />
+              <Route path="/disha" component={Disha} />
               <Route path="/jagriti" component={Jagriti} />
               <Route path="/escape" component={Escape} />
               <Route path="/bloodline" component={()=><Bloodline />} />
