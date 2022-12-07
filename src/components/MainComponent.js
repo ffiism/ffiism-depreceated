@@ -8,7 +8,7 @@ import Members from './MemberComponent'
 import Bloodline from './BloodlineComponent'
 import Jagriti from './JagritiComponent';
 import Contact from './ContactComponent'
-import {TransitionGroup,CSSTransition} from 'react-transition-group';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import Escape from './EscapeComponent'
 import Disha from './DishaComponent';
 
@@ -20,41 +20,33 @@ class Main extends Component {
   render() {
 
     const HomePage = () => {
-      return(
+      return (
         <Home />
       );
     }
 
     return (
       <div>
-
-      {/* // <Container>
-      //   <Row lg="1" xs="1">
-      //     <Col lg="12" xs = "12"> */}
-            <Header />
-            <TransitionGroup>
-         <CSSTransition classNames="page" timeout={300}>
+        <Header />
+        <TransitionGroup>
+          <CSSTransition classNames="page" timeout={300}>
             <Switch>
-              <Route path="/home" component={()=> <Home />} />
+              <Route path="/home" component={() => <Home />} />
               <Route path="/aboutus" component={HomePage} />
               <Route path="/disha" component={Disha} />
               <Route path="/jagriti" component={Jagriti} />
               <Route path="/escape" component={Escape} />
-              <Route path="/bloodline" component={()=><Bloodline />} />
+              <Route path="/bloodline" component={() => <Bloodline />} />
               <Route exact path="/members" component={() => <Members />} />
               <Route path="/donate" component={HomePage} />
               <Route path="/contactus" component={Contact} />
               <Redirect to="/home" />
             </Switch>
-           </CSSTransition>
-            </TransitionGroup>
-            <Footer />
-      {/* //     </Col>
-      //   </Row>
-      // </Container> */}
-
+          </CSSTransition>
+        </TransitionGroup>
+        <Footer />
       </div>
-      
+
     );
   }
 }
